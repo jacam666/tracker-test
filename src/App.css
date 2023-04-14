@@ -1,0 +1,190 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  /*background: linear-gradient(#595656 50%, #262121);*/
+  background-color: #595656;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  border: 0.5px 0.5px 0 0.5px solid black;
+  /*background: linear-gradient(#f36161, #ed0909);
+  background: linear-gradient(#595656 50%, #262121);*/
+  padding: 20px;
+  margin-top: 0px;
+}
+
+.selection-header {
+  border-radius: 30px;
+  text-align: center;
+  margin: 30px auto;
+  width: 60%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(#595656 50%, #262121);
+}
+
+/*.login-button {
+  background: linear-gradient(#595656 50%, #262121);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.signup-button {
+  background: linear-gradient(#595656 50%, #262121);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}*/
+
+.navbar {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+ul{
+  margin: 0;
+}
+li {
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  border-right: 1px solid rgb(170, 164, 164);
+  background: linear-gradient(#595656 50%, #262121);
+}
+
+li a {
+  color: #fff;
+  text-decoration-line: none;
+}
+
+h1{
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+#progress {
+  font-size: 10px;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100vw;
+  cursor: pointer;
+}
+
+.arms-image, 
+.chest-image, 
+.legs-image, .back-image, 
+.shoulders-image {
+  height: 300px;
+  width: 20vw;
+}
+
+.card-chest,
+.card-arms,
+.card-legs,
+.card-shoulders,
+.card-back {
+  width: 20%;
+  border: 1px solid #121212;
+  /*border-radius: 7px;*/
+}
+p{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-top: 80px;
+}
+
+.firstName-input,
+.lastName-input,
+.email-input,
+.password-input {
+  width: 320px;
+  height: 5vh;
+  background-color: #4b4747;
+  color: #fff;
+}
+
+.firstName-input::placeholder,
+.lastName-input::placeholder,
+.email-input::placeholder,
+.password-input::placeholder {
+  color: #fff;
+}
+
+.submit-button {
+  background-color: #4b4747 ;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
